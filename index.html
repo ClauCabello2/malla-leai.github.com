@@ -1,0 +1,193 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+  <meta charset="UTF-8">
+  <div class="fondo">
+  <title>Malla Curricular LEAI</title>
+  <div class="img1" ><img id="icon1" src="iesenlogo-removebg-preview.png" height="210" width="240px"  ></div>
+  <div class="img2" ><img id="icon2" src="LEAILOGO-removebg-preview.png" height="210px" width="220px"  ></div>
+  <link rel="stylesheet" href="styles.css">
+  
+  <style>
+    .tachado {
+      text-decoration: line-through;
+      opacity: 0.6;
+    }
+    .info-box {
+      position: fixed;
+      bottom: 20px;
+      left: 20px;
+      background: white;
+      padding: 15px;
+      border: 1px solid #ccc;
+      border-radius: 8px;
+      box-shadow: 2px 2px 6px rgba(0,0,0,0.1);
+    }
+  </style>
+</head>
+
+<body>
+  <div class="fondo">
+    <h1 class="titulo">Malla Curricular LEAI</h1>
+
+    <!-- SEMESTRE 1 (ejemplo, puedes copiar la estructura para los demás) -->
+    <div class="semestre">
+      <div class="nodo titulo-nube">Semestre 1</div>
+      <div class="contenedor-materias">
+        <div class="nodo lavanda" onclick="mostrarInfo('Bases filosóficas...', '4 hrs / 4.5 créditos', '9.0')">Bases filosóficas</div>
+        <div class="nodo lavanda" onclick="mostrarInfo('Desarrollo infantil...', '4 hrs / 4.5 créditos', '10.0')">Desarrollo infantil</div>
+        <div class="nodo lavanda" onclick="mostrarInfo('Teorias y Modelos del aprendizaje', '4 hrs / 4.5 créditos', '9.0')">Modelos de aprendizaje</div>
+        <div class="nodo lavanda" onclick="mostrarInfo('Acercamiento a prácticas educativas y comunitarias', '6 hrs / 6.75 créditos', '10.0')">Prácticas educativas</div>
+        <div class="nodo lavanda" onclick="mostrarInfo('Introducción a la lingüística', '4 hrs / 4.5 créditos','9.0')">Lingüística</div>
+        <div class="nodo lavanda" onclick="mostrarInfo('Prácticas sociales para la enseñanza del inglés', '4 hrs / 4.5 créditos','10.0')">Prácticas sociales</div>
+        <div class="nodo lavanda" onclick="mostrarInfo('Inglés. Inicio de la comunicación básica', '4 hrs / 4.5 créditos', '9.0')">Inglés básico</div>
+       <div class="nodo lavanda" onclick="mostrarInfo('Inglés. Inicio de la comunicación básica (oral)', '6 hrs / 6.75 créditos', '9.0' )">Inglés oral</div>  
+  </div>
+</div>
+
+<!-- SEMESTRE 2 -->
+<div class="semestre">
+  <div class="nodo titulo-nube">Semestre 2</div>
+  <div class="contenedor-materias">
+    <div class="nodo azul" onclick="mostrarInfo('Sistema educativo mexicano: Propósitos y contenidos', '4 hrs / 4.5 créditos','10.0')">Sistema educativo</div>
+    <div class="nodo azul" onclick="mostrarInfo('Desarrollo de la adolescencia y juventud', '4 hrs / 4.5 créditos','10.0')">Adolescencia</div>
+    <div class="nodo azul" onclick="mostrarInfo('Pedagogía y didáctica general', '4 hrs / 4.5 créditos', '10.0')">Didáctica general</div>
+    <div class="nodo azul" onclick="mostrarInfo('Análisis de prácticas y contextos escolares', '6 hrs / 6.75 créditos','10.0')">Prácticas 2</div>
+    <div class="nodo azul" onclick="mostrarInfo('Fonética y fonología', '4 hrs / 4.5 créditos','8.0')">Fonética</div>
+    <div class="nodo azul" onclick="mostrarInfo('Enseñanza de la gramática', '4 hrs / 4.5 créditos','10.0')">Gramática</div>
+    <div class="nodo azul" onclick="mostrarInfo('Planeacion Didactica', '4 hrs / 4.5 créditos', '10.0')">Planeacion Didactica</div>
+    <div class="nodo azul" onclick="mostrarInfo('Inglés. Desarrollo de conversaciones elementales', '6 hrs / 6.75 créditos','10.0')">Conversaciones</div>
+  </div>
+</div>
+
+<!-- SEMESTRE 3 -->
+<div class="semestre">
+  <div class="nodo titulo-nube">Semestre 3</div>
+  <div class="contenedor-materias">
+    <div class="nodo rosa" onclick="mostrarInfo('Desafíos de la educación nacional e internacional: Retos actuales y prospectiva', '4 hrs / 4.5 créditos')">Desafíos educativos</div>
+    <div class="nodo rosa" onclick="mostrarInfo('Aportes de las neurociencias a la enseñanza del inglés', '4 hrs / 4.5 créditos')">Neurociencias</div>
+    <div class="nodo rosa" onclick="mostrarInfo('Evaluación de aprendizajes', '4 hrs / 4.5 créditos')">Evaluación de aprendizajes</div>
+    <div class="nodo rosa" onclick="mostrarInfo('Intervención didáctico-pedagógica y trabajo docente', '6 hrs / 6.75 créditos')">Intervención docente</div>
+    <div class="nodo rosa" onclick="mostrarInfo('Morfología y sintaxis', '4 hrs / 4.5 créditos')">Morfología</div>
+    <div class="nodo rosa" onclick="mostrarInfo('Enseñanza del inglés con énfasis en comprensión y expresión oral', '4 hrs / 4.5 créditos')">Comprensión oral</div>
+    <div class="nodo rosa" onclick="mostrarInfo('Inglés. Intercambio de información e ideas', '6 hrs / 6.75 créditos')">Inglés informativo</div>
+  </div>
+</div>
+
+<!-- SEMESTRE 4 -->
+<div class="semestre">
+  <div class="nodo titulo-nube">Semestre 4</div>
+  <div class="contenedor-materias">
+    <div class="nodo menta" onclick="mostrarInfo('Enseñanza del inglés en la Educación Básica', '4 hrs / 4.5 créditos')">Inglés en básica</div>
+    <div class="nodo menta" onclick="mostrarInfo('Educación inclusiva en atención a la diversidad', '4 hrs / 4.5 créditos')">Educación inclusiva</div>
+    <div class="nodo menta" onclick="mostrarInfo('Redacción de textos académicos', '4 hrs / 4.5 créditos')">Redacción académica</div>
+    <div class="nodo menta" onclick="mostrarInfo('Estrategias de trabajo docente y saberes pedagógicos', '6 hrs / 6.75 créditos')">Saberes docentes</div>
+    <div class="nodo menta" onclick="mostrarInfo('Semántica y pragmática', '4 hrs / 4.5 créditos')">Semántica</div>
+    <div class="nodo menta" onclick="mostrarInfo('Enseñanza del inglés con énfasis en comprensión y expresión escrita', '4 hrs / 4.5 créditos')">Expresión escrita</div>
+    <div class="nodo menta" onclick="mostrarInfo('Inglés. Fortalecimiento de la confianza en la conversación', '6 hrs / 6.75 créditos')">Confianza conversacional</div>
+  </div>
+</div>
+
+<!-- SEMESTRE 5 -->
+<div class="semestre">
+  <div class="nodo titulo-nube">Semestre 5</div>
+  <div class="contenedor-materias">
+    <div class="nodo coral" onclick="mostrarInfo('Investigación educativa', '4 hrs / 4.5 créditos')">Investigación</div>
+    <div class="nodo coral" onclick="mostrarInfo('Evaluación de las habilidades del inglés', '4 hrs / 4.5 créditos')">Evaluación inglés</div>
+    <div class="nodo coral" onclick="mostrarInfo('Desarrollo socioemocional y vida saludable en educación', '4 hrs / 4.5 créditos')">Socioemocional</div>
+    <div class="nodo coral" onclick="mostrarInfo('Investigación e innovación de la práctica docente', '6 hrs / 6.75 créditos')">Innovación docente</div>
+    <div class="nodo coral" onclick="mostrarInfo('Psicolingüística', '4 hrs / 4.5 créditos')">Psicolingüística</div>
+    <div class="nodo coral" onclick="mostrarInfo('Métodos y enfoques innovadores en la enseñanza del inglés', '4 hrs / 4.5 créditos')">Enfoques innovadores</div>
+    <div class="nodo coral" onclick="mostrarInfo('Inglés. Hacia nuevas perspectivas globales', '6 hrs / 6.75 créditos')">Perspectivas globales</div>
+  </div>
+</div>
+
+<!-- SEMESTRE 6 -->
+<div class="semestre">
+  <div class="nodo titulo-nube">Semestre 6</div>
+  <div class="contenedor-materias">
+    <div class="nodo Mauvepastel" onclick="mostrarInfo('Materiales didácticos en la educación', '4 hrs / 4.5 créditos')">Materiales didácticos</div>
+    <div class="nodo Mauvepastel" onclick="mostrarInfo('Gestión del centro educativo para la inclusión y la igualdad', '4 hrs / 4.5 créditos')">Gestión educativa</div>
+    <div class="nodo Mauvepastel" onclick="mostrarInfo('Investigación sobre el aprendizaje de idiomas', '4 hrs / 4.5 créditos')">Aprendizaje de idiomas</div>
+    <div class="nodo Mauvepastel" onclick="mostrarInfo('Práctica docente y proyectos de mejora escolar y comunitaria', '6 hrs / 6.75 créditos')">Proyectos escolares</div>
+    <div class="nodo Mauvepastel" onclick="mostrarInfo('Sociolingüística', '4 hrs / 4.5 créditos')">Sociolingüística</div>
+    <div class="nodo Mauvepastel" onclick="mostrarInfo('Literatura de los pueblos de habla inglesa', '4 hrs / 4.5 créditos')">Literatura pueblos</div>
+    <div class="nodo Mauvepastel" onclick="mostrarInfo('Certificación del idioma', '4 hrs / 4.5 créditos')">Certificación</div>
+    <div class="nodo Mauvepastel" onclick="mostrarInfo('Inglés. Convertirse en comunicadores independientes', '6 hrs / 6.75 créditos')">Inglés independiente</div>
+  </div>
+</div>
+
+<!-- SEMESTRE 7 -->
+ <div class="sem7">
+<div class="semestre">
+  <div class="nodo titulo-nube">Semestre 7</div>
+  <div class="contenedor-materias">
+    <div class="nodo plateado" onclick="mostrarInfo('Trabajo de titulación', '8 hrs / 9 créditos')">Titulación</div>
+    <div class="nodo plateado" onclick="mostrarInfo('Aprendizaje en el servicio', '20 hrs / 22.5 créditos')">Servicio profesional</div>
+  </div>
+</div>
+</div>
+<br>
+<!-- SEMESTRE 8 -->
+ <div class="sem8">
+<div class="semestre">
+  <div class="nodo titulo-nube">Semestre 8</div>
+  <div class="contenedor-materias">
+    <div class="nodo dorado" onclick="mostrarInfo('Trabajo de titulación', '8 hrs / 9 créditos')">Titulación</div>
+    <div class="nodo dorado" onclick="mostrarInfo('Aprendizaje en el servicio', '20 hrs / 22.5 créditos')">Servicio profesional</div>
+  </div>
+</div>
+</div>
+<br>
+<br>
+<br>
+<br>
+<br>
+<br>
+
+    <!-- CUADRO DE INFORMACIÓN -->
+    <div id="infoCurso" class="info-box" style="display:none;">
+      <h2 id="tituloCurso"></h2>
+      <p id="detalleCurso"></p>
+      <button onclick="cerrarInfo()">Cerrar</button>
+    </div>
+  </div>
+
+  <!-- SCRIPT FUNCIONAL -->
+  <script>
+    function mostrarInfo(nombre, detalle, calificacion = "No disponible") {
+      document.getElementById("tituloCurso").innerText = nombre;
+      document.getElementById("detalleCurso").innerText = detalle;
+
+      const calElem = document.getElementById("calificacionCurso");
+      calElem.innerText = "Calificación: " + calificacion;
+
+      const valor = parseFloat(calificacion);
+      if (!isNaN(valor)) {
+        if (valor >= 8) calElem.style.color = "green";
+        else if (valor >= 6) calElem.style.color = "orange";
+        else calElem.style.color = "red";
+      } else {
+        calElem.style.color = "gray";
+      }
+
+      document.getElementById("infoCurso").style.display = "block";
+    }
+
+    function cerrarInfo() {
+      document.getElementById("infoCurso").style.display = "none";
+    }
+
+    // Tachar materias al hacer clic
+    document.addEventListener("DOMContentLoaded", () => {
+      const nodos = document.querySelectorAll(".nodo");
+      nodos.forEach(nodo => {
+        nodo.addEventListener("click", () => {
+          nodo.classList.toggle("tachado");
+        });
+      });
+    });
+  </script>
+  
+</body>
+</html>
