@@ -1,0 +1,212 @@
+
+
+/* Estilos generales */
+
+body {
+    font-family: 'american typewriter;', cursive, sans-serif;
+    background: #dff0fc;
+    padding: 2rem;
+  }
+  
+  .fondo {
+    max-width: 1200px;
+    margin: auto;
+    background: #ffffffaa;
+    border-radius: 20px;
+    padding: 2rem;
+    box-shadow: 0 0 15px rgba(0, 0, 0, 0.1);
+
+    }
+    
+    .img1{
+        float:left;
+       
+    }
+    .img2{
+        float:right;
+    }
+    .sem7{
+        float: left;
+    }
+    .sem8{
+      float: right;
+    }
+  .titulo {
+    text-align: center;
+    font-size: 2.5rem;
+    color: #333;
+    margin-bottom: 2rem;
+  }
+  
+  .semestre{
+    margin-bottom: 3rem;
+    
+  }
+  .lavanda:hover {
+    background-color: rgb(62, 3, 82);
+    color: white;
+}
+  .rosa:hover {
+    background-color: rgb(134, 14, 100);
+    color: white;
+}
+.azul:hover {
+    background-color: rgb(29, 11, 129);
+    color: white;
+}
+.menta:hover {
+    background-color: rgb(2, 88, 104);
+    color: white;
+}
+.coral:hover {
+    background-color: #e75a37;
+    color: white;
+}
+.dorado:hover {
+    background-color: rgb(0, 102, 128);
+    color: goldenrod;
+}
+.plateado:hover {
+    background-color: rgb(96, 0, 128);
+    color: grey;
+}
+.Mauvepastel:hover {
+    background-color: #6A0DAD;
+    color: white;
+}
+  .titulo-nube {
+    background: #fceabb;
+    color: #333;
+    border-radius: 30px;
+    padding: 0.5rem 2rem;
+    font-size: 1.5rem;
+    display: inline-block;
+    margin-bottom: 1rem;
+  }
+  
+  .contenedor-materias {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 1rem;
+  }
+  
+  .nodo {
+    padding: 1rem;
+    border-radius: 20px;
+    box-shadow: 2px 2px 8px rgba(0, 0, 0, 0.15);
+    text-align: center;
+    cursor: pointer;
+    flex: 1 1 calc(25% - 1rem);
+    min-width: 180px;
+    transition: 0.3s ease;
+  }
+  
+  /* Paleta por trayecto */
+  .rosa      { background-color: #ffcce5; }  /* General / Básico */
+  .azul      { background-color: #cce5ff; }  /* Fundamentos de educación */
+  .menta     { background-color: #ccffe6; }  /* Bases teóricas/metodológicas */
+  .coral     { background-color: #ffd6cc; }  /* Práctica profesional */
+  .lavanda   { background-color: #e6ccff; }  /* Formación pedagógica */
+  .verdeagua { background-color: #95f4f9; }  /* Lenguas y tecnologías */
+  .plateado  {background-color:  silver;   } /* titulacion */
+  .dorado    {background-color:  gold;    }  /* titulacion */
+  .Mauvepastel{ background-color: #E0B0FF;} /* other */
+  
+  .nodo:hover {
+    transform: scale(1.05);
+  }
+  
+  .info-box {
+    display: none;
+    position: fixed;
+    bottom: 2rem;
+    right: 2rem;
+    background: white;
+    padding: 1.5rem;
+    border: 2px solid #ccc;
+    border-radius: 10px;
+    max-width: 300px;
+    box-shadow: 0 5px 15px rgba(0, 0, 0, 0.2);
+  }
+  body {
+    font-family: american typewriter, cursive, sans-serif;
+    background: #dff0fc;
+    padding: 2rem;
+  }
+  
+  .mapa {
+    max-width: 1200px;
+    margin: auto;
+    background: #ffffffaa;
+    border-radius: 20px;
+    padding: 2rem;
+    box-shadow: 0 0 15px rgba(0,0,0,0.1);
+  }
+  
+  .titulo {
+    text-align: center;
+    font-size: 2.5rem;
+    color: #333;
+    margin-bottom: 2rem;
+  }
+  
+  .semestre {
+    margin-bottom: 3rem;
+    right: 4rem;
+    display: inline-block;
+    text-align: center;
+  }
+  
+  
+  
+  .titulo-nube {
+    background: #fceabb;
+    color: #333;
+    border-radius: 30px;
+    padding: 0.5rem 2rem;
+    font-size: 1.5rem;
+    display: inline-block;
+    margin-bottom: 1rem;
+
+  }
+  
+
+    
+  .contenedor-materias {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 1rem;
+  }
+  
+  .nodo {
+    padding: 1rem;
+    border-radius: 20px;
+    box-shadow: 2px 2px 8px rgba(0,0,0,0.15);
+    text-align: center;
+    cursor: pointer;
+    flex: 1 1 calc(25% - 1rem);
+    min-width: 180px;
+  }
+  
+  .rosa {
+    background-color: #ffcce5;
+  }
+  
+  .nodo:hover {
+    transform: scale(1.05);
+    transition: 0.3s ease;
+  }
+  
+  .info-box {
+    display: none;
+    position: fixed;
+    bottom: 2rem;
+    right: 2rem;
+    background: white;
+    padding: 1.5rem;
+    border: 2px solid #ccc;
+    border-radius: 10px;
+    max-width: 300px;
+    box-shadow: 0 5px 15px rgba(0,0,0,0.2);
+  } 
+  
